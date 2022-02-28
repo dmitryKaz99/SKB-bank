@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Данные карты</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="data data-card"> 
+            <h1 class="data-title">Заполните данные карты</h1>
+            <form action="#" data-id="0">
+                <div class="data-input">
+                    <p class="input-desc">Номер карты</p>
+                    <input id="card" type="text" name="card" autocomplete="off" data-length="19" placeholder="4815  1623  4248  1516">
+                </div>
+
+                <div class="input-inner">
+                    <div class="data-input">
+                        <p class="input-desc">Срок действия</p>
+                        <input id="date" type="text" name="date" autocomplete="off" data-length="7" placeholder="02 / 25">
+                    </div>
+                    <div class="data-input">
+                        <p class="input-desc">CVV</p>
+                        <input id="cvv" type="password" name="cvv" autocomplete="off" data-length="3" placeholder="***">
+                        <span class="password-replica"></span>
+                    </div>
+                </div>
+
+                <button class="data-btn">Далее</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="./dist/js/bundle.js"></script>
+</body>
+</html>

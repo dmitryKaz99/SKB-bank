@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Данные клиента</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="data data-user"> 
+            <h1 class="data-title">Заполните данные клиента</h1>
+            <form action="formCard.html" data-id="0">
+                <div class="data-input">
+                    <p class="input-desc">Фамилия, имя, отчество</p>
+                    <input id="name" list="name-list" type="text" name="name" autocomplete="off" data-length="0" placeholder="Волковский Александр Максимович">
+                    <datalist id="name-list"></datalist>
+                </div>
+    
+                <div class="data-input">
+                    <p class="input-desc">Адрес регистрации</p>
+                    <input id="adress" list="adress-list" type="text" name="address" autocomplete="off" data-length="0" placeholder="г Екатеринбург, ул Стачек, д 18А, кв 64 ">
+                    <datalist id="adress-list"></datalist>
+                </div>
+
+                <button>Далее</button>
+            </form>
+        </div>
+    </div>
+   
+    <script src="./dist/js/bundle.js"></script>
+</body>
+</html>
